@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "largebiomesdimension",
+  "version": "${version}",
+  "name": "largebiomesdimension",
+  "description": "Add large biomes as separate dimension.",
+  "authors": [
+    "mahmudindev"
+  ],
+  "contact": {
+    "homepage": "https://github.com/mahmudindev",
+    "sources": "https://github.com/mahmudindev/mcmod-largebiomesdimension"
+  },
+  "license": "ARR",
+  "icon": "assets/largebiomesdimension/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.github.mahmudindev.mcmod.largebiomesdimension.fabric.LargeBiomesDimensionFabric"
+    ],
+    "client": [
+      "com.github.mahmudindev.mcmod.largebiomesdimension.fabric.client.LargeBiomesDimensionFabricClient"
+    ]
+  },
+  "mixins": [
+    "largebiomesdimension.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.14",
+    "minecraft": "~1.20.1",
+    "java": ">=17",
+    "worldportal": ">=0.0.9"
+  },
+  "suggests": {
+    "fabric-api": "*"
+  }
+}
