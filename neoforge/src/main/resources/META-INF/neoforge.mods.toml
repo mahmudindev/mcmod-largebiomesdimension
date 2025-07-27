@@ -1,5 +1,5 @@
 modLoader = "javafml"
-loaderVersion = "[47,)"
+loaderVersion = "[4,)"
 issueTrackerURL = "https://github.com/mahmudindev/mcmod-largebiomesdimension"
 license = "ARR"
 
@@ -14,22 +14,25 @@ Add large biomes as separate dimension.
 logoFile = "assets/largebiomesdimension/icon.png"
 
 [[dependencies.largebiomesdimension]]
-modId = "forge"
-mandatory = true
-versionRange = "[47,)"
+modId = "neoforge"
+type = "required"
+versionRange = "[21.0,)"
 ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.largebiomesdimension]]
 modId = "minecraft"
-mandatory = true
-versionRange = "[1.20.1,)"
+type = "required"
+versionRange = "[1.21,)"
 ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.largebiomesdimension]]
 modId = "worldportal"
-mandatory = true
+type = "required"
 versionRange = "[0.0.9,)"
 ordering = "NONE"
 side = "SERVER"
+
+[[mixins]]
+config = "superflatdimension.mixins.json"
