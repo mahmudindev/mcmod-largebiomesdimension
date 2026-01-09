@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "id": "largebiomesdimension",
   "version": "${version}",
-  "name": "largebiomesdimension",
-  "description": "Add large biomes as separate dimension.",
+  "name": "Large Biomes Dimension",
+  "description": "Add large biomes world type as separate dimension.",
   "authors": [
     "mahmudindev"
   ],
@@ -29,6 +29,7 @@
     "fabricloader": ">=0.16.14",
     "minecraft": "~1.21",
     "java": ">=21",
+    "dimensionfixer": ">=0.0.9",
     "worldportal": ">=0.0.9"
   },
   "suggests": {
